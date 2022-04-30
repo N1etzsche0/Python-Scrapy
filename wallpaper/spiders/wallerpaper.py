@@ -6,7 +6,7 @@ from ..items import WallpaperItem
 class WallerpaperSpider(scrapy.Spider):
     name = 'wallerpaper'
     allowed_domains = ['wallpapershome.com']
-    start_urls = ['https://wallpapershome.com/?page=' + str(x) for x in range(1, 100)]
+    start_urls = ['https://wallpapershome.com/?page=' + str(x) for x in range(1, 2)]
 
 
     def parse(self, response):
